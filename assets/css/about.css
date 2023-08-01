@@ -1,0 +1,215 @@
+* {
+    font-family: 'Titillium Web';
+    /* box-sizing: border-box; */
+}
+
+/* .row {
+    align-items: center;
+} */
+.bg-nav,.bg-footer{
+    background-color: #000;
+}
+.hero--section {
+    background: url(../images/header-about-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 125px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-item .nav-link:hover {
+    color: #F1C706 !important;
+}
+.nav-link.active{
+    color: #F1C706 !important;
+    font-weight: 600;
+}
+.navbar-toggler-icon {
+    background-image: url(../images/menu-icon.png);
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+h3{
+    font-size: 36px;
+}
+h4 {
+    font-weight: 600;
+    line-height: 37px;
+    color: #CDCDCD;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.p-24 {
+    font-size: 24px;
+    line-height: 31px;
+}
+.p-16 {
+    line-height: 150%;
+    color: #4F5A68;
+    margin-top: 20px;
+}
+.p-14 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #4F5A68;
+    margin-top: 20px;
+}
+h3 span,h2 span {
+    display: inline-block;
+    width: 36px;
+    height: 2px;
+    vertical-align: middle;
+    margin-left: 18px;
+    background-color: #F1C706;
+}
+
+.py {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.features--section{
+    padding-top: 60px;
+    background: #111111;
+}
+.card{
+    background: transparent;
+    border: 1px solid #1E1E1E;
+}
+.vision-img img{
+    max-width: 100%;
+}
+.feedback--section {
+    background: #F2F2F2;
+}
+
+.client .card:hover {
+    background-color: #FFFFFF !important;
+    transition: all .3s ease-out;
+}
+.slide-btn {
+    width: 17px !important;
+    height: 17px !important;
+    border-radius: 50%;
+    background-color: #888787 !important;
+}
+
+.slide-btn.active {
+    background-color: #F1C706 !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #F1C706 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+}
+.feedback {
+    left: 0;
+    right: 0;
+    top: -12%;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mt-100 img {
+    display: inline-block;
+}
+.yellow {
+    color: #F1C706;
+}
+
+footer .p-14 {
+    font-size: 14px;
+    color: white;
+    margin-top: 0;
+}
+
+footer .p-16 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+    background-color: #2F2F2F !important;
+    border: none;
+    color: #FFFFFF;
+}
+
+.input-group-text {
+    padding-right: 5px;
+    padding-left: 28px;
+}
+
+.form-control {
+    padding: 10px 0px 12px 5px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-group .btn {
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #F1C706;
+    border: 1px solid #F1C706;
+}
+
+footer .btn:hover {
+    background-color: #2F2F2F;
+}
+
+footer a:hover {
+    color: #F1C706 !important;
+    transition: all .2s;
+}
+.border-bottom {
+    border-color: #333333 !important;
+}
+footer li{
+    list-style: none;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #F1C706;
+}
+@media (max-width: 576px) {
+    html {
+        text-align: center;
+    }
+    .py {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    h3 span , h2 span{
+    display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .nav-link {
+        font-size: 16px;
+    }
+}

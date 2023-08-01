@@ -1,0 +1,236 @@
+* {
+    font-family: 'Titillium Web';
+    /* box-sizing: border-box; */
+}
+
+
+.bg-nav,
+.bg-footer {
+    background-color: #000;
+}
+
+.hero--section {
+    background: url(../images/career-header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 225px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-item .nav-link:hover {
+    color: #F1C706 !important;
+}
+.nav-link.active{
+    color: #F1C706 !important;
+    font-weight: 600;
+}
+.navbar-toggler-icon {
+    background-image: url(../images/menu-icon.png);
+}
+
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 36px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.p-16 {
+    line-height: 150%;
+    color: #4F5A68;
+    margin-top: 20px;
+}
+
+.p-14 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #4F5A68;
+    margin-top: 20px;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+h3 span,
+h2 span {
+    display: inline-block;
+    width: 36px;
+    height: 2px;
+    vertical-align: middle;
+    margin-left: 18px;
+    background-color: #F1C706;
+}
+
+.py {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.border-bottom {
+    border-color: #E8E8E8 !important;
+}
+
+.btn-warning {
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .2s;
+    padding: 16px 50px;
+}
+
+.btn-outline-secondary {
+    padding: 16px 43% !important;
+    transition: all .2s;
+}
+.btn-outline-secondary:hover{
+    color: #000 !important;
+    background-color: #F1C706 !important;
+    transition: all .2s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #F1C706;
+}
+
+.btn-warning img {
+    padding-left: 10px;
+}
+
+.btn-warning:hover img {
+    filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
+}
+
+.dwn-btn .btn:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.dwn-btn .btn:hover img {
+    filter: none;
+}
+
+.bg-dark .dwn-btn .btn:hover {
+    color: #F1C706;
+    border-color: yellow;
+}
+
+.bg-dark .dwn-btn .btn:hover img {
+    filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.yellow {
+    color: #F1C706;
+}
+
+footer .p-14 {
+    font-size: 14px;
+    color: white;
+    margin-top: 0;
+}
+
+footer .p-16 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+    background-color: #2F2F2F !important;
+    border: none;
+    color: #FFFFFF;
+}
+
+.input-group-text {
+    padding-right: 5px;
+    padding-left: 28px;
+}
+
+.form-control {
+    padding: 10px 0px 12px 5px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.input-group .btn {
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #F1C706;
+    border: 1px solid #F1C706;
+}
+
+footer .btn:hover {
+    background-color: #2F2F2F;
+}
+
+footer a:hover {
+    color: #F1C706 !important;
+    transition: all .2s;
+}
+
+footer li {
+    list-style: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #F1C706;
+}
+
+@media (max-width: 576px) {
+    html {
+        text-align: center;
+    }
+
+    .py {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .navbar-brand img {
+        width: 200px;
+    }
+
+    h3 span,
+    h2 span {
+        display: none;
+    }
+
+    .hero--section {
+        padding-top: 120px;
+    }
+
+    .btn-outline-secondary {
+        padding: 16px 50px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav-link {
+        font-size: 16px;
+    }
+}
