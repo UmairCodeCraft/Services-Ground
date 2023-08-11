@@ -15,11 +15,22 @@
     background-repeat: no-repeat;
     padding-top: 225px;
 }
-
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
 .nav-link {
     font-size: 20px;
 }
-
+.navbar-toggler{
+border-color:none;
+}
+.navbar-toggler:focus{
+box-shadow:none;
+}
 .nav-item .nav-link:hover {
     color: #F1C706 !important;
 }
@@ -95,7 +106,15 @@ h2 span {
     transition: all .2s;
     padding: 16px 50px;
 }
-
+.apply_btn:hover,.ft-btn:hover{
+     background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.5s ease-in-out!important;
+    background-color: #F0C808;
+    background-size: 250% 100%;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
+}
 .btn-outline-secondary {
     padding: 16px 43% !important;
     transition: all .2s;
@@ -105,10 +124,10 @@ h2 span {
     background-color: #F1C706 !important;
     transition: all .2s;
 }
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #F1C706;
-}
+} */
 
 .btn-warning img {
     padding-left: 10px;
@@ -120,7 +139,7 @@ h2 span {
 
 .dwn-btn .btn:hover {
     color: #000;
-    border-color: #000;
+    /* border-color: #000; */
 }
 
 .dwn-btn .btn:hover img {
@@ -183,9 +202,9 @@ footer .p-16 {
     border: 1px solid #F1C706;
 }
 
-footer .btn:hover {
+/* footer .btn:hover {
     background-color: #2F2F2F;
-}
+} */
 
 footer a:hover {
     color: #F1C706 !important;
@@ -196,10 +215,10 @@ footer li {
     list-style: none;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #F1C706;
-}
+} */
 
 @media (max-width: 576px) {
     html {
@@ -227,6 +246,24 @@ footer li {
     .btn-outline-secondary {
         padding: 16px 50px !important;
     }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
+.nav-link, footer li a{
+    font-size: 18px !important;
+}
+h1,h2,h3{
+    font-size: 34px;
+}
+p{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: 18px;
+    text-align: justify;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

@@ -12,6 +12,22 @@
     cursor: pointer;
 }
 
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
+.navbar-toggler{
+border-color:none;
+}
+nav button{
+    margin-bottom: 0;
+}
+.navbar-toggler:focus{
+box-shadow:none;
+}
 .chat-btn .close {
     display: none
 }
@@ -173,20 +189,32 @@ h2 small {
     font-size: 22px;
     transition: all .2s;
     padding: 16px 30px;
+    border: 1px solid transparent;
+    background-position: left bottom;
+}
+.btn-hero_section:hover,.btn_footer:hover{
+    background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.2s ease-in-out!important;
+    background-color: #F0C808;
+    background-size: 250% 100%;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
+
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #F1C706;
-}
+}  */
 
 .btn-warning img {
     padding-left: 10px;
 }
 
-.btn-warning:hover img {
+/* .btn-warning:hover img {
     filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
-}
+} */
 
 .filter a {
     font-size: 18px;
@@ -275,9 +303,9 @@ footer .p-16 {
     border: 1px solid #F1C706;
 }
 
-footer .btn:hover {
+/* footer .btn:hover {
     background-color: #2F2F2F;
-}
+} */
 
 footer a:hover {
     color: #F1C706 !important;
@@ -292,10 +320,10 @@ footer li {
     list-style: none;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #F1C706;
-}
+} */
 
 @media (max-width: 576px) {
     html {
@@ -315,6 +343,25 @@ footer li {
     h2 span {
         display: none;
     }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
+p{
+    font-size: 16px;
+    text-align: start;
+}
+h2.services_heading{
+    font-size: 34px;
+}
+.nav-link{
+    font-size: 18px;
+}
+footer ul li a{
+    font-size: 18px !important;
+}
 }
 
 @media (min-width: 992px) {

@@ -15,7 +15,13 @@
     background-repeat: no-repeat;
     padding-top: 125px;
 }
-
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
 .nav-link {
     font-size: 20px;
 }
@@ -26,6 +32,12 @@
 .nav-link.active{
     color: #F1C706 !important;
     font-weight: 600;
+}
+.navbar-toggler{
+border-color:none;
+}
+.navbar-toggler:focus{
+box-shadow:none;
 }
 .navbar-toggler-icon {
     background-image: url(../images/menu-icon.png);
@@ -109,7 +121,13 @@ h3 span,h2 span {
     border-radius: 50%;
     background-color: #888787 !important;
 }
-
+.client_testimonial_section .slick-dots li button:hover:before{
+color:#6c757d;
+opacity:0.50;
+}
+.client_testimonial_section .slick-prev,.client_testimonial_section .slick-next{
+    display: none !important;
+}
 .slide-btn.active {
     background-color: #F1C706 !important;
 }
@@ -175,10 +193,18 @@ footer .p-16 {
     border: 1px solid #F1C706;
 }
 
-footer .btn:hover {
+/* footer .btn:hover {
     background-color: #2F2F2F;
+} */
+.ft-btn:hover{
+ background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.5s ease-in-out!important;
+    background-color: #F0C808;
+    background-size: 250% 100%;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
 }
-
 footer a:hover {
     color: #F1C706 !important;
     transition: all .2s;
@@ -189,10 +215,10 @@ footer a:hover {
 footer li{
     list-style: none;
 }
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #F1C706;
-}
+} */
 @media (max-width: 576px) {
     html {
         text-align: center;
@@ -207,6 +233,28 @@ footer li{
     h3 span , h2 span{
     display: none;
     }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
+.ourselves_section p.p-24{
+    padding-top: 26px;
+    font-size: 18px;
+}
+.about_p{
+    text-align: justify;
+}
+.vision_section p.p-24{
+    font-size: 18px;
+    text-align: justify;
+}
+.client_testimonial_section p.p-24{
+    font-size: 18px;
+    text-align: justify;
+    padding-top:20px;
+}
 }
 @media (min-width: 992px) and (max-width: 1200px){
     .nav-link {

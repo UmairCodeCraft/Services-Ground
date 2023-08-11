@@ -13,7 +13,62 @@ header {
     background-repeat: no-repeat;
     padding-bottom: 126px;
 }
-
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
+.hero_section{
+padding-top:180px;
+}
+.business_hero_section span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 55px;
+    color:#c8c8c8;
+}
+.business_hero_section p {
+    max-width: 564px;
+    padding-top: 20px;
+}
+.business_hero_section h1 {
+    max-width: 652px;
+    padding-top: 12px;
+color:#fff;
+}
+.business_hero_section .slick-dots li button:before{
+color:#fff;
+opacity:.90;
+}
+.business_hero_section .slick-dots{
+display: flex !important;
+    flex-direction: column !important;
+right:0;
+width:12%;
+bottom:10%;
+}
+.business_hero_section .slick-dots li{
+margin:22px 5px;
+}
+.business_hero_section business-section-slider{
+position: relative;
+}
+.client_testimonial_section button.slick-arrow{
+display:none !important;
+}
+.client_testimonial_section .slick-dots li button:hover:before{
+color:#6c757d;
+opacity:0.50;
+}
+.navbar-toggler{
+border-color:none;
+}
+.navbar-toggler:focus{
+box-shadow:none;
+}
 .nav-link {
     font-size: 20px;
 }
@@ -86,20 +141,31 @@ h3 span {
     font-size: 22px;
     transition: all .2s;
     padding: 18px 31px;
-    margin-top: 65px !important;
+    margin-top: 20px !important;
 }
 
 .btn:hover {
     background-color: transparent;
     color: #F1C706;
+    background-position: left bottom;
 }
+
+.btn-hero_section:hover,.btn_footer:hover{
+    background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.5s ease-in-out!important;
+    background-color: #F0C808;
+    background-size: 250% 100%;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
+
+}
+
 
 .btn-warning img {
     padding-left: 10px;
 }
-.btn-warning:hover img{
-    filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
-}
+
 .arrow-next{
 transition: all .3s ease-in-out;
 }
@@ -175,7 +241,11 @@ transition: all .3s ease-in-out;
     margin-top: 24px;
     display: block;
 }
-
+.business_type_section h4.fs-4{
+display:flex;
+align-items:center;
+gap:15px;
+}
 .mt-100 {
     margin-top: 100px;
     max-width: 370px;
@@ -361,9 +431,9 @@ footer .p-16 {
     border: 1px solid #F1C706;
 }
 
-footer .btn:hover {
+/* footer .btn:hover {
     background-color: #2F2F2F;
-}
+} */
 
 footer a:hover {
     color: #F1C706 !important;
@@ -394,6 +464,19 @@ footer a:hover {
 }
 footer li{
     list-style: none;
+}
+@media (max-width: 992px) {
+.business_hero_section .slick-dots{
+    display: none !important;
+}
+}
+@media (max-width: 768px) {
+.business_hero_section h1{
+    font-size: 60px;
+}
+header{
+    padding-bottom: 100px;
+}
 }
 @media (max-width: 576px) {
     h1 {
@@ -428,6 +511,44 @@ footer li{
         font-size: 18px;
         padding: 15px 20px;
     }
+    .business_hero_section h1{
+        font-size: 34px;
+    }
+    .business_hero_section p{
+        padding-top: 30px;
+        text-align: justify;
+    }
+    .business_hero_section span{
+        padding-top: 50px;
+        display: inline-block;
+        font-size: 24px;
+    }
+    .hero_section{
+        padding-top:94px;
+    }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
+header{
+    padding-bottom: 80px;
+}
+.business_type_section h4.fs-4{
+    font-size: 20px !important;
+    gap: 5px;
+}
+p{
+    font-size: 16px !important;
+    text-align: justify;
+}
+.nav-link{
+    font-size: 18px;
+}
+footer li a{
+    font-size: 18px !important;
+}
 }
 @media (min-width: 992px) {
     .indust__hover {

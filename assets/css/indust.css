@@ -14,7 +14,13 @@
   background-repeat: no-repeat;
   padding-top: 225px;
 }
-
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
 .nav-link {
   font-size: 20px;
 }
@@ -25,6 +31,12 @@
 .nav-link.active{
   color: #F1C706 !important;
   font-weight: 600;
+}
+.navbar-toggler{
+border-color:none;
+}
+.navbar-toggler:focus{
+box-shadow:none;
 }
 .navbar-toggler-icon {
   background-image: url(../images/menu-icon.png);
@@ -84,11 +96,22 @@ h2 span {
   font-size: 22px;
   transition: all 0.2s;
   padding: 16px 30px;
+  border: 1px solid transparent;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: transparent;
   color: #f1c706;
+} */
+.indust_common_btn:hover,.ft_indust_btn:hover{
+    background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.5s ease-in-out!important;
+    background-color: #F0C808 !important;
+    background-size: 250% 100% ;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
+
 }
 
 .btn-warning img {
@@ -99,10 +122,10 @@ h2 span {
   filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
 }
 
-.dwn-btn .btn:hover {
+/* .dwn-btn .btn:hover {
   color: #000;
   border-color: #000;
-}
+} */
 
 .dwn-btn .btn:hover img {
   filter: none;
@@ -113,9 +136,9 @@ h2 span {
   border-color: yellow;
 }
 
-.bg-dark .dwn-btn .btn:hover img {
+/* .bg-dark .dwn-btn .btn:hover img {
   filter: invert(80%) sepia(58%) saturate(2263%) hue-rotate(351deg) brightness(102%) contrast(105%);
-}
+} */
 
 img {
   max-width: 100%;
@@ -208,6 +231,20 @@ footer li {
   .hero--section {
     padding-top: 120px;
   }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
+p{
+  font-size: 16px;
+  text-align: justify;
+  padding-top: 20px;
+}
+.nav-link,footer li a{
+  font-size: 18px !important;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

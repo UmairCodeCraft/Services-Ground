@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="assets/images/Favicon.png" href="assets/images/Favicon.png">
     <title>Services-ground</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,24 +25,41 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-nav fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg pt-3 ">
-                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <header>
+        <div class="bg-dark position-fixed w-100 main-nav_bar">
+            <div class="container">
+                <nav class="navbar  pt-3">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="d-flex ms-auto">
+                    <div class="pe-md-3">
+                        <ul class="d-flex nav_bar  align-items-center ps-0 mb-0">
+                            <li class="nav-item">
+                                <a class=" d-md-block d-none nav-link text-white active" href="index.html">Home</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="service.html" class=" d-md-block d-none nav-link text-white">Our services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="d-md-block d-none nav-link text-white">Contact</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
+                </div>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white px-4" aria-current="page"
-                                href="home.html">Home</a>
+                    <ul class="navbar-nav ms-auto mb-2 pt-5">
+                        <li class="nav-item d-md-none d-block">
+                            <a class="nav-link text-white px-4 active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white px-4 active" href="service.html">Our
-                                Services</a>
+                        <li class="nav-item d-md-none d-block">
+                            <a class="nav-link text-white px-4" href="service.html">Our Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white px-4" href="indust.html">Industries</a>
@@ -52,25 +70,31 @@
                         <li class="nav-item">
                             <a class="nav-link text-white px-4" href="about.html">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-md-none d-block">
                             <a class="nav-link text-white px-4" href="contact.html">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="booking.html">Booking</a>
+                        </li>
+                        
                     </ul>
+                    
                 </div>
             </nav>
+            </div>
         </div>
     </header>
     <div class="container-fluid hero--section">
-        <div class="container py-5">
+        <div class="container py-1 py-md-5">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2><small>Corporate</small> Business Website <span></span></h2>
-                    <p class="">Get a user-friendly and attention-grabbing website for your business that leaves a
+                    <h2 class="services_heading"><small>Corporate</small> Business Website <span></span></h2>
+                    <p class="pt-3 pt-md-2">Get a user-friendly and attention-grabbing website for your business that leaves a
                         lasting
                         impression of your brand.</p>
                 </div>
                 <div class="col-lg-6 text-center mt-3">
-                    <button class="btn btn-warning">Get a Quote <img src="assets/images/arrow-btn.png"
+                    <button class="btn btn-warning btn-hero_section">Get a Quote <img src="assets/images/arrow-btn.png"
                             alt="arrow"></button>
                 </div>
             </div>
@@ -129,7 +153,7 @@
                 <div class="col-lg-4 col-md-6 my-5 my-lg-0">
                     <div class="card position-relative">
                         <p class="p-24 text-dark fw-bold text-center mt-4">Pre-build Plan</p>
-                        <p class="text-dark text-center pt-3 mb-5">Elementum quisque nulla duis orci. Mus iaculis et
+                        <p class="text-dark text-center pt-3 mb-5 ps-1 pe-1">Elementum quisque nulla duis orci. Mus iaculis et
                             massa ac ornare. Neque ultrices nam integer vel ornare.</p>
                         <hr>
                         <p class="fs-20 text-dark fw-bold ps-3">Serivece inludes:</p>
@@ -164,7 +188,7 @@
                 <div class="col-lg-4 col-md-6 my-5 my-lg-0">
                     <div class="card position-relative">
                         <p class="p-24 text-dark fw-bold text-center mt-4">Custom Plan</p>
-                        <p class="text-dark text-center pt-3 mb-5">Elementum quisque nulla duis orci. Mus iaculis et
+                        <p class="text-dark text-center pt-3 mb-5 ps-1 pe-1">Elementum quisque nulla duis orci. Mus iaculis et
                             massa
                             ac ornare. Neque ultrices nam integer vel ornare.</p>
                         <hr>
@@ -200,7 +224,7 @@
                 <div class="col-lg-4 my-5 my-lg-0">
                     <div class="card position-relative">
                         <p class="p-24 text-dark fw-bold text-center mt-4">Custom Advanced Plan</p>
-                        <p class="text-dark text-center pt-3 mb-5">Elementum quisque nulla duis orci. Mus iaculis et
+                        <p class="text-dark text-center pt-3 mb-5 ps-1 pe-1">Elementum quisque nulla duis orci. Mus iaculis et
                             massa ac ornare. Neque ultrices nam integer vel ornare.</p>
                         <hr>
                         <p class="fs-20 text-dark fw-bold ps-3">Serivece inludes:</p>
@@ -273,7 +297,7 @@
                                         alt="icon"></span>
                                 <input type="email" class="form-control" placeholder="Enter Your Email"
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <input class="btn" type="submit" id="button-addon2" value="Submit">
+                                <input class="btn btn_footer" type="submit" id="button-addon2" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -320,7 +344,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 col-xs-12">
-                        <p class="p-14 text-sm-end">© 2000-2021, All Rights Reserved</p>
+                        <p class="p-14 text-sm-end">© 2000-2023, All Rights Reserved</p>
                     </div>
                 </div>
             </div>

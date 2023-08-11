@@ -14,15 +14,29 @@
     background-repeat: no-repeat;
     padding-top: 225px;
 }
-
+.main-nav_bar{
+padding:13px 0;
+z-index:99;
+}
+.nav_bar li a{
+padding:10px 20px;
+}
 .nav-link {
     font-size: 20px;
 }
-
+.nav-link.active {
+    color: #F1C706 !important;
+    font-weight: 600;
+}
 .nav-item .nav-link:hover {
     color: #f1c706 !important;
 }
-
+.navbar-toggler{
+border-color:none;
+}
+.navbar-toggler:focus{
+box-shadow:none;
+}
 .navbar-toggler-icon {
     background-image: url(../images/menu-icon.png);
 }
@@ -86,12 +100,20 @@ h2 span {
     padding: 16px 30px;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #000000 !important;
     border-color: #000;
+} */
+.ft-btn:hover,.Appoinment_btn:hover{
+    background-image: linear-gradient(45deg, #c6a60f 50%, #F0C808 50%) !important;
+    transition: all.5s ease-in-out!important;
+    background-color: #F0C808;
+    background-size: 250% 100%;
+    border: 1px solid transparent;
+    color:black !important;
+    background-position: right bottom;
 }
-
 .half-bg {
     background-image: url(../images/contact-sec-bg.png);
     background-repeat: no-repeat;
@@ -163,9 +185,9 @@ footer .p-16 {
 footer input::placeholder{
     color: #E7E7E7 !important;
 }
-footer .btn:hover {
+/* footer .btn:hover {
     background-color: #2f2f2f;
-}
+} */
 
 footer a:hover {
     color: #f1c706 !important;
@@ -176,10 +198,10 @@ footer li {
     list-style: none;
 }
 
-.btn:hover {
+/* .btn:hover {
     background-color: transparent;
     color: #f1c706;
-}
+} */
 
 @media (max-width: 575.96px) {
     .py {
@@ -203,6 +225,12 @@ footer li {
         background-image: none;
         background-size: 100% 55% !important;
     }
+.chat-btn{
+
+bottom:20px;
+width:50px;
+height:50px;
+}
 }
 
 @media (max-width: 992px) {

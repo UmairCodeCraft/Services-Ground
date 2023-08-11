@@ -8,7 +8,7 @@
     <title>Services-ground</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link rel="icon" type="assets/images/Favicon.png" href="assets/images/Favicon.png">
     <script src="https://kit.fontawesome.com/19b36ddfbe.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"
         rel="stylesheet" />
@@ -24,44 +24,67 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-nav fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg pt-3">
-                <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <header>
+        <div class="bg-dark position-fixed w-100 main-nav_bar">
+            <div class="container">
+                <nav class="navbar  pt-3">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                <div class="d-flex ms-auto">
+                    <div class="pe-md-3">
+                        <ul class="d-flex nav_bar  align-items-center ps-0 mb-0">
+                            <li class="nav-item">
+                                <a class=" d-md-block d-none nav-link text-white active" href="index.html">Home</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a href="service.html" class=" d-md-block d-none nav-link text-white">Our services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="d-md-block d-none nav-link text-white">Contact</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"></span>
                 </button>
+                </div>
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-white px-4" aria-current="page"
-                                href="home.html">Home</a>
+                    <ul class="navbar-nav ms-auto mb-2 pt-5">
+                        <li class="nav-item d-md-none d-block">
+                            <a class="nav-link text-white px-4 active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white px-4" href="service.html">Our
-                                Services</a>
+                        <li class="nav-item d-md-none d-block">
+                            <a class="nav-link text-white px-4" href="service.html">Our Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white px-4" href="indust.html">Industries</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white px-4 active" href="career.html">Career</a>
+                            <a class="nav-link text-white px-4" href="career.html">Career</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white px-4" href="about.html">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-md-none d-block">
                             <a class="nav-link text-white px-4" href="contact.html">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white px-4" href="booking.html">Booking</a>
+                        </li>
+                        
                     </ul>
+                    
                 </div>
             </nav>
+            </div>
         </div>
     </header>
     <div class="container-fluid hero--section">
-        <div class="container py-5">
+        <div class="container py-1 py-md-5">
             <h2>Career <span></span></h2>
             <p class="fs-4">
                 Faucibus leo viverra vitae fringilla dictum leo. Ultrices ultrices
@@ -122,7 +145,7 @@
                     </div>
                 </div>
             </form>
-            <div class="row border-bottom py-5 align-items-center">
+            <div class="row border-bottom py-1 py-md-5 align-items-center">
                 <div class="col-md-3 mt-3 mt-md-0 text-center text-md-start">
                     <p class="fs-6 text-dark mb-1">IT</p>
                     <p class="fs-5 text-dark fw-semibold">Reach Js Developer</p>
@@ -139,7 +162,28 @@
                 </div>
                 <div class="col-md-3 text-center mt-3 mt-md-0">
                     <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-bottom py-1 py-md-4 align-items-center">
+                <div class="col-md-3 mt-3 mt-md-0 text-center text-md-start">
+                    <p class="fs-6 text-dark mb-1">IT</p>
+                    <p class="fs-5 text-dark fw-semibold">Reach Js Developer</p>
+                </div>
+                <div class="col-md-3 mt-3 mt-md-0 text-center text-md-start">
+                    <p class="text-dark fw-semibold mb-1">Description</p>
+                    <p class="fs-6 text-dark">
+                        We are looking for a Js Developer with at least 3 years of
+                        experience
+                    </p>
+                </div>
+                <div class="col-md-3 text-center mt-3 mt-md-0">
+                    <p class="fs-6 text-dark">In-House</p>
+                </div>
+                <div class="col-md-3 text-center mt-3 mt-md-0">
+                    <div class="dwn-btn text-center text-md-end">
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
                     </div>
                 </div>
             </div>
@@ -160,7 +204,7 @@
                 </div>
                 <div class="col-md-3 text-center mt-3 mt-md-0">
                     <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
                     </div>
                 </div>
             </div>
@@ -181,7 +225,7 @@
                 </div>
                 <div class="col-md-3 text-center mt-3 mt-md-0">
                     <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
                     </div>
                 </div>
             </div>
@@ -202,7 +246,7 @@
                 </div>
                 <div class="col-md-3 text-center mt-3 mt-md-0">
                     <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
                     </div>
                 </div>
             </div>
@@ -223,35 +267,14 @@
                 </div>
                 <div class="col-md-3 text-center mt-3 mt-md-0">
                     <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row border-bottom py-4 align-items-center">
-                <div class="col-md-3 mt-3 mt-md-0 text-center text-md-start">
-                    <p class="fs-6 text-dark mb-1">IT</p>
-                    <p class="fs-5 text-dark fw-semibold">Reach Js Developer</p>
-                </div>
-                <div class="col-md-3 mt-3 mt-md-0 text-center text-md-start">
-                    <p class="text-dark fw-semibold mb-1">Description</p>
-                    <p class="fs-6 text-dark">
-                        We are looking for a Js Developer with at least 3 years of
-                        experience
-                    </p>
-                </div>
-                <div class="col-md-3 text-center mt-3 mt-md-0">
-                    <p class="fs-6 text-dark">In-House</p>
-                </div>
-                <div class="col-md-3 text-center mt-3 mt-md-0">
-                    <div class="dwn-btn text-center text-md-end">
-                        <a href="contact.html" class="btn btn-warning">Apply Now</a>
+                        <a href="contact.html" class="btn btn-warning apply_btn">Apply Now</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="bg-footer">
-        <div class="container-fluid py-5 border-bottom">
+        <div class="container-fluid py-md-5 py-1 border-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -301,14 +324,14 @@
                                         alt="icon" /></span>
                                 <input type="email" class="form-control" placeholder="Enter Your Email"
                                     aria-label="Username" aria-describedby="basic-addon1" />
-                                <input class="btn" type="submit" id="button-addon2" value="Submit" />
+                                <input class="btn ft-btn" type="submit" id="button-addon2" value="Submit" />
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid py-5">
+        <div class="container-fluid py-md-5 py-1">
             <div class="container">
                 <ul class="d-md-flex text-center justify-content-between ps-0">
                     <li>
@@ -374,7 +397,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 col-xs-12">
-                        <p class="p-14 text-sm-end">© 2000-2021, All Rights Reserved</p>
+                        <p class="p-14 text-sm-end">© 2000-2023, All Rights Reserved</p>
                     </div>
                 </div>
             </div>
